@@ -20,12 +20,13 @@
   width: 100%;
   background: none;
   border: none;
-  color: #0a0014;
+  color: var(--highlight);
   font-size: 3rem;
   font-weight: bold;
   cursor: pointer;
   padding: 2rem;
   text-align: left;
+  font-family: 'JustOldFashion', sans-serif;
 }
 
 .fold{
@@ -47,7 +48,7 @@
 
 body {
   margin: 0;
-  font-family: 'Blackletter Shadow ', sans-serif;
+  font-family: 'JustOldFashion', sans-serif;
   background: radial-gradient(circle at 30% 30%, #1a0033, transparent 70%),
               radial-gradient(circle at 70% 70%, #350066, transparent 70%),
               radial-gradient(circle at 50% 100%, #25004f, transparent 70%);
@@ -69,7 +70,7 @@ body {
 
 
 body {
-  font-family: 'Blackletter Shadow', sans-serif ;
+  font-family: 'JustOldFashion', sans-serif ;
   background-color: var(--bg-color);
   color: var(--text);
   margin: 0;
@@ -90,6 +91,7 @@ h1 {
   text-shadow: black;
   margin-bottom: 0.5rem;
   letter-spacing: 2px;
+  font-weight: bold;
 }
 
 nav a {
@@ -140,7 +142,7 @@ section h2 {
 }
 
 footer {
-  background-color: #100000;
+  background-color: #e0d8f0;
   text-align: left;
   padding: 2rem;
   color: var(--subtext);
@@ -153,4 +155,3 @@ a {
 
 a:hover {
   color: var(--highlight);
-}
