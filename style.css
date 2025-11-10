@@ -21,7 +21,7 @@
   background: none;
   border: none;
   color: var(--highlight);
-  font-size: 3rem;
+  font-size: 3rem
   font-weight: bold;
   cursor: pointer;
   padding: 2rem;
@@ -78,7 +78,9 @@ body {
   color: var(--text);
   margin: 0;
   padding: 0;
-  background-image: url("images/black-spider-web-background-blue-aesthetic-r1tr3a9uz1evdsmr-3402778637.jpg")
+  background-image: url("images/black-spider-web-background-blue-aesthetic-r1tr3a9uz1evdsmr-3402778637.jpg") center center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -163,4 +165,31 @@ a {
 
 a:hover {
   color: var(--highlight);
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .toggle {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  section {
+    font-size: 1.2rem;
+    padding: 1.5rem 0.5rem;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: 0.5rem;
+  }
+
+  .gallery img {
+    width: 150px;
+  }
 }
