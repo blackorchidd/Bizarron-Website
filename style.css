@@ -19,26 +19,45 @@
 
 .toggle {
   width: 100%;
-  background: none;
+  display: block;
+  background: rgba(138, 43, 226, 0.2);
   border: none;
   color: var(--text);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
-  padding: 2rem;
+  padding: 0.8rem;
   text-align: left;
   font-family: 'JustOldFashion', sans-serif;
   text-shadow: 0 0 10px var(--accent);
 }
 
+
+.toggle:hover{
+  background: rgba(138, 43, 226, 0.35);
+}
 .fold{
+    margin:1rem auto;
+    width: 90%;
+    max-width: 800px;
     backdrop-filter: blur(8px);
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 0 0 20px rgba(138,43,226,0.3); */
-    height : auto;
-    overflow: visible;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
 }
 
+.fold .content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    padding: 0 1rem;
+}
+
+.fold.open .content{
+    max-height: 1000px;
+    padding: 1rem;
+}
 .content {
   max-height: 0;
   overflow: hidden;
@@ -186,18 +205,16 @@ a:hover {
 @media (max-width: 768px) {
 
   h1 {
-      font-size: clamp(1.8rem,6vw,3rem);
+      font-size: clamp(2rem,8vw,3rem);
   }
 
-  h2{
-      font-size: clamp(1.4rem,5vw,2.2rem);
-  }
-  p{
-      font-size: clamp(0.95rem, 3.5vw, 1.1rem);
-  }
   .toggle {
     font-size: 1.2rem;
     padding: 1rem;
+  }
+
+  .fold{
+      width: 95%;
   }
 
   section {

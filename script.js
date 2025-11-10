@@ -1,8 +1,6 @@
-const toggles = document.querySelectorAll(".toggle")
-
-toggles.forEach(btn => {
-    btn.addEventListener("click", ()=> {
-        const content = btn.nextElementSibling;
-        content.classList.toggle("open")
+document.querySelectorAll(".toggle").forEach(button => {
+    button.addEventListener("click", () => {
+        const fold = button.closest(".fold");
+        fold.classList.toggle("open")
     });
 });
