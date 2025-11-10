@@ -73,14 +73,20 @@ body {
 
 
 body {
-  font-family: 'JustOldFashion', sans-serif ;
-  background-color: var(--bg-color);
+ margin: 0;
+  font-family: 'JustOldFashion', sans-serif;
   color: var(--text);
-  margin: 0;
-  padding: 0;
-  background-image: url("images/black-spider-web-background-blue-aesthetic-r1tr3a9uz1evdsmr-3402778637.jpg") center center fixed;
+  overflow-x: hidden;
+
+  background:
+    radial-gradient(circle at 30% 30%, #1a0033, transparent 70%),
+    radial-gradient(circle at 70% 70%, #350066, transparent 70%),
+    radial-gradient(circle at 50% 100%, #25004f, transparent 70%),
+    url("images/black-spider-web-background-blue-aesthetic-r1tr3a9uz1evdsmr-3402778637.jpg") center center / cover no-repeat fixed;
+
+  background-blend-mode: screen;
+  animation: fogMove 20s ease-in-out infinite alternate;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 header {
@@ -150,7 +156,7 @@ section h2 {
 }
 
 footer{
-    width: 100%;
+  width: 100%;
   background-color: #0a0014;
   text-align: left;
   padding: 2rem;
