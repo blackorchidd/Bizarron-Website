@@ -38,13 +38,15 @@
 .content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
+  /* Transition seems to still be jittery. Will have to come back to this */
+  transition: max-height 0.2s ease, padding 0.2s ease;
   padding: 0 1em;
 }
 
 .content.open {
-  max-height: 200rem;
-  padding: 1em;
+  max-height: 200 rem;
+  /*May need to be adjusted on a case by case basis. Effects size of the drop down*/
+  padding: 30 rem;
 }
 
 body {
@@ -76,7 +78,7 @@ body {
   color: var(--text);
   margin: 0;
   padding: 0;
-background-image: url("~/Code/band-website/images/black-spider-web-background-blue-aesthetic-r1tr3a9uz1evdsmr-3402778637.jpg") fixed center;
+  background-image: url("~/Code/band-website/images/black-spider-web-background-blue-aesthetic-r1tr3a9uz1evdsmr-3402778637.jpg") fixed center;
 }
 
 header {
@@ -87,7 +89,8 @@ header {
 }
 
 h1 {
-  font-size: 5rem;
+  /*May need to readjust this to have title fit on mobile devices*/
+  font-size: 7rem;
   color: var(--highlight);
   text-shadow: black;
   margin-bottom: 0.5rem;
@@ -114,6 +117,8 @@ section {
   padding: 3rem 1rem;
   text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 1.7rem;
+  text-shadow: black;
 }
 
 section h2 {
