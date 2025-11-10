@@ -118,7 +118,6 @@ section {
   text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   font-size: 1.7rem;
-  text-shadow: black;
 }
 
 section h2 {
@@ -162,3 +161,4 @@ a {
 
 a:hover {
   color: var(--highlight);
+}
