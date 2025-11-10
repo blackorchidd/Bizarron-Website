@@ -44,9 +44,9 @@
 }
 
 .content.open {
-  max-height: 200 rem;
+  max-height: 200rem;
   /*May need to be adjusted on a case by case basis. Effects size of the drop down*/
-  padding: 30 rem;
+  padding: 30rem;
 }
 
 body {
@@ -78,7 +78,7 @@ body {
   color: var(--text);
   margin: 0;
   padding: 0;
-  background-image: url("~/Code/band-website/images/black-spider-web-background-blue-aesthetic-r1tr3a9uz1evdsmr-3402778637.jpg") fixed center;
+  background-image: url("images/black-spider-web-background-blue-aesthetic-r1tr3a9uz1evdsmr-3402778637.jpg")
 }
 
 header {
@@ -148,11 +148,13 @@ section h2 {
 }
 
 footer{
+    width: 100%;
   background-color: #0a0014;
   text-align: left;
   padding: 2rem;
   color: var(--subtext);
   font-size: 1.2rem;
+  box-sizing: border-box;
 }
 
 a {
