@@ -44,7 +44,7 @@
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(138,43,226,0.3); */
     overflow: hidden;
-    transition: max-height 0.5s ease;
+    transition: max-height 0.2s ease;
 }
 
 .fold .content{
@@ -135,7 +135,7 @@ h1 {
 
 nav a {
   color: var(--text);
-  margin: 0 15px;
+  margin: 0 25px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -204,9 +204,9 @@ a:hover {
 
 @media (max-width: 768px) {
 
-  h1 {
-      font-size: clamp(2rem,8vw,3rem);
-  }
+  /* h1 { */
+  /*     font-size: clamp(2rem,8vw,3rem); */
+  /* } */
 
   .toggle {
     font-size: 1.2rem;
