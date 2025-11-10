@@ -5,6 +5,7 @@
   --highlight: #b266ff;
   --text: #e0d8f0;
   --subtext: #8881a7;
+  --text_shadow: #000000;
 }
 
 
@@ -20,8 +21,8 @@
   width: 100%;
   background: none;
   border: none;
-  color: var(--highlight);
-  font-size: 3rem
+  color: var(--text);
+  font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
   padding: 2rem;
@@ -115,6 +116,7 @@ nav a {
   font-weight: bold;
   transition: color 0.3s ease;
   font-size: 2rem;
+  text-shadow: 0 0 10px var(--accent);
 }
 
 nav a:hover {
@@ -124,7 +126,7 @@ nav a:hover {
 section {
   padding: 3rem 1rem;
   text-align: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.05); */
   font-size: 1.7rem;
 }
 
@@ -161,8 +163,9 @@ footer{
   text-align: left;
   padding: 2rem;
   color: var(--subtext);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   box-sizing: border-box;
+  text-shadow: 0 0 10px var(--accent);
 }
 
 a {
